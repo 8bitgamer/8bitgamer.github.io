@@ -7,6 +7,40 @@
     padding: 40% 0 30% 0;
 }
 
+.hero-content{
+    z-index:10;
+}
+
+/* SVG Morph */
+.morph-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    pointer-events: none;
+    z-index:-1;
+}
+
+.morph {
+	position: relative;
+	height: 100%;
+	fill: var(--background-color-2);
+	flex: none;
+}
+
+
+.hero-content .morph {
+	fill: none;
+	stroke-width: 12px;
+    stroke: #22bcc0;
+    mix-blend-mode: exclusion;
+}
+
 .hero{
     color:#fff;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -316,6 +350,10 @@
    transform: none;
  }
 
+.mobile--nav{
+    text-align:center;
+}
+
 @media (min-width: 750px) {
     .mobile--nav{
         display:none;
@@ -334,4 +372,9 @@ a
 a:hover
 {
   color: tomato;
+}
+
+.blur{
+    filter: blur(5px);
+    transition: all .5s;
 }
