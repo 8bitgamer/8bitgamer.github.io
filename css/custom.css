@@ -1,3 +1,7 @@
+body{
+    height:9000px;
+}
+
 .section{
     text-align:center;
     background:#fff;
@@ -34,11 +38,10 @@
 }
 
 
-.hero-content .morph {
-	fill: none;
+body .morph {
+    fill: none;
 	stroke-width: 12px;
     stroke: #22bcc0;
-    mix-blend-mode: exclusion;
 }
 
 .hero{
