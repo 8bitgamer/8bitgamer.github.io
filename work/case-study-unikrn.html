@@ -20,10 +20,17 @@
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/skeleton.css">
   <link rel="stylesheet" href="../css/custom.css">
+  <link rel="stylesheet" type="text/css" href="../css/base.css" />
+  <link rel="stylesheet" type="text/css" href="../css/uncover.css" />
+  <script>
+  document.documentElement.className = "js";
+  var supportsCssVars = function() { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e };
+  supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
+  </script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="icon" type="image/png" href="../../img/favicon.png">
 
 
   <!-- Fonts
@@ -45,47 +52,74 @@
       </ul>
     </div>
   </nav>
-
-  <div class="section hero">
-      <div class="container">
-        <div class="row intro">
-          <div class="u-full-width column">
-            <h1 class="title">UX Designer in Seattle</h1>
-            <h2 class="tagline">I design & build digital products</h2>
-            <p class="hero-copy">This is where I tell you a bit about myself, blah blah blah, interesting stuff goes here.</p>
+  <main>
+    <div class="section hero">
+        <div class="container">
+          <div class="row intro">
+            <div class="u-full-width column hero-content">
+              <h1 class="title">Unikrn eSports betting platform</h1>
+              <h2 class="tagline">Breaking into a new industry</h2>
+              <p class="hero-copy">Designing a new Homepage after launching the MVP product for Unikrn.</p>
+            </div>
           </div>
         </div>
+    </div>
+    <div class="content grid">
+      <div class="grid__item">
+        <div class="scroll-img" style="background-image: url(http://via.placeholder.com/500x500);"></div>
+        <div class="grid__item-titlewrap">
+          <h2 class="grid__item-title">#Problem</h2>
+          <p class="grid__item-description">Find me tomorrow or never</p>
+        </div>
       </div>
-  </div>
-  <div class="section featured">
-    <div class="container">
-      <div class="row">
-        <div class="one-third column value">
-          <h2 class="value-multiplier">60%</h2>
-          <h5 class="value-heading">Designer</h5>
-          <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
+      <div class="grid__item">
+        <div class="scroll-img" style="background-image: url(http://via.placeholder.com/500x500);"></div>
+        <div class="grid__item-titlewrap">
+          <h2 class="grid__item-title">#Solution</h2>
+          <p class="grid__item-description">Never end it like that</p>
         </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">40%</h2>
-          <h5 class="value-heading">Developer</h5>
-          <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
+      </div>
+      <div class="grid__item">
+        <div class="scroll-img" style="background-image: url(http://via.placeholder.com/500x500);"></div>
+        <div class="grid__item-titlewrap">
+          <h2 class="grid__item-title">#MyRole</h2>
+          <p class="grid__item-description">Why make noise like that?</p>
         </div>
-        <div class="one-third column value">
-          <h2 class="value-multiplier">100%</h2>
-          <h5 class="value-heading">User Advocate</h5>
-          <p class="value-description">Percentage of users that are frustrated with page load times.</p>
+      </div>
+      <div class="grid__item">
+        <div class="scroll-img" style="background-image: url(http://via.placeholder.com/500x500);"></div>
+        <div class="grid__item-titlewrap">
+          <h2 class="grid__item-title">#Process</h2>
+          <p class="grid__item-description">No point in running</p>
+        </div>
+      </div>
+      <div class="grid__item">
+        <div class="scroll-img" style="background-image: url(http://via.placeholder.com/500x500);"></div>
+        <div class="grid__item-titlewrap">
+          <h2 class="grid__item-title">#Kickoff</h2>
+          <p class="grid__item-description">When you get there</p>
+        </div>
+      </div>
+      <div class="grid__item">
+        <div class="scroll-img" style="background-image: url(http://via.placeholder.com/500x500);"></div>
+        <div class="grid__item-titlewrap">
+          <h2 class="grid__item-title">#Ideation</h2>
+          <p class="grid__item-description">Timeless manners count</p>
+        </div>
+      </div>
+      <div class="grid__item">
+        <div class="scroll-img" style="background-image: url(http://via.placeholder.com/500x500);"></div>
+        <div class="grid__item-titlewrap">
+          <h2 class="grid__item-title">#Results</h2>
+          <p class="grid__item-description">Together we can sit</p>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="section get-help">
-    <div class="container">
-      <h3 class="section-heading">Want to learn more about me?</h3>
-      <p class="section-description">The easiest way to find out more is by reaching out and talking. I love to hear from everyone from Product Owners to other Designers.</p>
-      <a class="button button-primary" href="../contact.html">Contact Me</a>
-    </div>
-  </div>
+  </main>
+  <script src="../js/imagesloaded.pkgd.min.js"></script>
+  <script src="../js/anime.min.js"></script>
+  <script src="../js/uncover.js"></script>
+  <script src="../js/slide.js"></script>
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
