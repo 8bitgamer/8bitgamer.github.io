@@ -23,6 +23,10 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/custom.css">
 
+
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="img/favicon.png">
@@ -34,7 +38,17 @@
 
 </head>
 <body>
-
+    <nav class="cd-vertical-nav">
+        <ul>
+          <li><a href="#section1" class="active"><span class="label">Unikrn Homepage</span></a></li>
+          <li><a href="#section2"><span class="label">Unikrn Vault</span></a></li>
+          <li><a href="#section3"><span class="label">Chronicles of Elyria</span></a></li>
+          <li><a href="#section4"><span class="label">Free Kingdom of Elyria</span></a></li>
+        </ul>
+      </nav><!-- .cd-vertical-nav -->
+      
+      <button class="cd-nav-trigger cd-image-replace">Open navigation<span aria-hidden="true"></span></button>
+      
   <!-- Navigation Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="navbar-spacer"></div>
@@ -72,16 +86,22 @@
               <h1 class="title">UX Designer in Seattle</h1>
               <h2 class="tagline">I design & build digital experiences</h2>
               <p class="hero-copy">This is where I tell you a bit about myself, blah blah blah, interesting stuff goes here.</p>
-              <div class="morph-wrap">
+
+              <!-- <div class="morph-wrap">
                 <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
                   <polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6"/>
                 </svg>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
-    </div>
+      </div>
+      <div class="hero-images">
+          <img class="hero-image" src="img/unikrn-news.png"/>
+          <img class="hero-image" src="img/razer-mouse.png"/>
+        </div>
 
+    <a href="#section1" class="cd-scroll-down cd-image-replace">scroll down</a>
       <!-- <div class="container">
         <div class="row">
           <div class="one-third column value">
@@ -109,28 +129,64 @@
 
 
 
-    <div class="section content-wrap">
-      <img  class="logo" src="http://via.placeholder.com/500x500"/>
+    <div class="section content-wrap" id="section1">
+      <div class="container">
+        <div class="row intro">
+          <div class="u-full-width column hero-content">
+            <h1 class="title">UNIKRN.com</h1>
+            <h2 class="tagline">LAUNCHING A STARTUP</h2>
+            <p class="hero-copy">User driven design backed by data.</p>
+          </div>
+          <a class="button" href="#">VIEW CASESTUDY</a>	
+        </div>
+      </div>
+    </div>
+    <div class="section content-wrap" id="section2">
+        <div class="container">
+          <div class="row intro">
+            <div class="u-full-width column hero-content">
+              <h1 class="title">Unikrn Vault</h1>
+              <h2 class="tagline">CREATING A WORLD</h2>
+              <p class="hero-copy">Most ambitious next-gen MORPG to date.</p>
+            </div>
+            <a class="button" href="#">VIEW CASESTUDY</a>
+          </div>
+        </div>
+    </div>
+    <div class="section content-wrap" id="section3">
+        <div class="container">
+          <div class="row intro">
+            <div class="u-full-width column hero-content">
+              <h1 class="title">CHRONICLESOFELYRIA.com</h1>
+              <h2 class="tagline">CREATING A WORLD</h2>
+              <p class="hero-copy">Most ambitious next-gen MORPG to date.</p>
+            </div>
+            <a class="button" href="#">VIEW CASESTUDY</a>
+          </div>
+        </div>
+    </div>
+    <div class="section content-wrap" id="section4">
+        <div class="container">
+          <div class="row intro">
+            <div class="u-full-width column hero-content">
+              <h1 class="title">Free Kingdom of Elyria</h1>
+              <h2 class="tagline">GROWING THE BOTTOM LINE</h2>
+              <p class="hero-copy">Most ambitious next-gen MORPG to date.</p>
+            </div>
+            <a class="button" href="#">VIEW CASESTUDY</a>
+          </div>
+        </div>
     </div>
     <div class="section content-wrap">
-      <img  class="logo" src="http://via.placeholder.com/500x500"/>
-    </div>
-    <div class="section content-wrap">
-      <img  class="logo" src="http://via.placeholder.com/500x500"/>
-    </div>
-    <div class="section content-wrap">
-      <img  class="logo" src="http://via.placeholder.com/500x500"/>
-    </div>
-    <div class="section content-wrap">
-      <img  class="logo" src="http://via.placeholder.com/500x500"/>
     </div>
 
 
 
     <!-- Final CTA
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <footer>
       <section class="content content--related">
-        <div class="section get-help content-wrap">
+        <div class="section get-help content-wrap final-CTA">
           <div class="container">
             <h3 class="section-heading">Want to learn more about me?</h3>
             <p class="section-description">The easiest way to find out more is by reaching out and talking. I love to hear from everyone from Product Owners to other Designers.</p>
@@ -138,10 +194,13 @@
           </div>
         </div>
       </section>
+    </footer>
   </main>
 <!-- Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+<script src="js/jquery-2.1.4.js"></script>
+<script src="js/scrollNav.js"></script>
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/anime.min.js"></script>
 <script src="js/scrollMonitor.js"></script>

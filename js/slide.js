@@ -1,3 +1,4 @@
+
 {
     // the settings for each one of the slides uncover instances.
     const uncoverOpts = [
