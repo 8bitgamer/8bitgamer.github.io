@@ -9,7 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jason Welter | User Experience Designer</title>
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Jason Welter">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -20,8 +20,10 @@
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/skeleton.css"> <!-- Boilerplate -->
+  <link rel="stylesheet" href="css/custom.css"> <!-- Custom CSS -->
+
+  <link rel="stylesheet" href="css/aos.css" /> <!-- Animate on Scroll CSS -->
 
 
 
@@ -86,48 +88,24 @@
               <h1 class="title">UX Designer in Seattle</h1>
               <h2 class="tagline">I design & build digital experiences</h2>
               <p class="hero-copy">This is where I tell you a bit about myself, blah blah blah, interesting stuff goes here.</p>
-
-              <!-- <div class="morph-wrap">
-                <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
-                  <polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6"/>
-                </svg>
-              </div> -->
             </div>
           </div>
         </div>
       </div>
 
-      <!-- <div class="container">
-        <div class="row">
-          <div class="one-third column value">
-            <h2 class="value-multiplier">60%</h2>
-            <h5 class="value-heading">Designer</h5>
-            <p class="value-description">Percentage of users more likely to purchase on mobile friendly site.</p>
-          </div>
-          <div class="one-third column value">
-            <h2 class="value-multiplier">40%</h2>
-            <h5 class="value-heading">Developer</h5>
-            <p class="value-description">Most of the world accesses the internet on multiple devices.</p>
-          </div>
-          <div class="one-third column value">
-            <h2 class="value-multiplier">100%</h2>
-            <h5 class="value-heading">User Advocate</h5>
-            <p class="value-description">Percentage of users that are frustrated with page load times.</p>
-          </div>
-        </div>
-      </div> -->
-
+      
+      
 
     <div class="section">
       <div class="row">
         <div class="one-third column hero-images">
-          <img class="u-max-full-width" src="img/razer-mouse.png">
+          <img class="u-max-full-width" src="img/razer-mouse.png" data-aos="fade-right">
         </div>     
         <div class="one-third column">
             <a href="#section1" class="cd-scroll-down cd-image-replace">scroll down</a>
         </div>    
         <div class="one-third column hero-images">
-          <img class="u-max-full-width" src="img/unikrn-news.png">
+          <img class="u-max-full-width" src="img/unikrn-news.png" data-aos="fade-left">
         </div>
       </div>
     </div>
@@ -135,7 +113,7 @@
     <!-- Case Studies
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-    <div class="section content-wrap" id="section1">
+    <div class="section content-wrap" id="section1" data-aos="fade-in">
       <div class="container">
         <div class="row">
           <div class="u-full-width column hero-content">
@@ -150,13 +128,13 @@
 
     <div class="section">
         <div class="row">
-          <div class="two-thirds column hero-images">
+          <div class="two-thirds column hero-images" data-aos="fade-right">
             <img class="u-max-full-width" src="img/razer-keyboard.png">
           </div>    
         </div>
       </div>
 
-    <div class="section content-wrap" id="section2">
+    <div class="section content-wrap" id="section2" data-aos="fade-in">
         <div class="container">
           <div class="row">
             <div class="u-full-width column hero-content">
@@ -169,31 +147,15 @@
         </div>
     </div>
 
-    <div class="section">
+    <div class="section colored-background">
         <div class="row">  
-          <div class="one-half column hero-images u-pull-right">
+          <div class="one-half column hero-images u-pull-right" data-aos="fade-left">
             <img class="u-max-full-width" src="img/coe-laptop.png">
           </div>
-          <!-- <div class="one-half column hero-images">
-              <img class="sword" src="img/sword.png">
-            </div> -->
         </div>
       </div>
 
-    <div class="section content-wrap" id="section3">
-        <div class="container">
-          <div class="row">    
-            <div class="u-full-width column hero-content">
-              <h1 class="title">CHRONICLESOFELYRIA.com</h1>
-              <h2 class="tagline">CREATING A WORLD</h2>
-              <p class="hero-copy">Most ambitious next-gen MORPG to date.</p>         
-              <img class="sword" src="img/sword2.png">
-            </div>
-            <a class="button" href="#">VIEW CASESTUDY</a>   
-          </div>
-        </div>
-    </div>
-    <div class="section content-wrap" id="section4">
+    <div class="section content-wrap" id="section3" data-aos="fade-in">
         <div class="container">
           <div class="row">
             <div class="u-full-width column hero-content">
@@ -205,7 +167,19 @@
           </div>
         </div>
     </div>
-    <div class="section content-wrap">
+
+    <div class="section content-wrap" id="section4" data-aos="fade-in">
+        <div class="container">
+          <div class="row">    
+            <div class="u-full-width column hero-content">
+              <h1 class="title">CHRONICLESOFELYRIA.com</h1>
+              <h2 class="tagline">CREATING A WORLD</h2>
+              <p class="hero-copy">Most ambitious next-gen MORPG to date.</p>         
+              <img class="sword" data-aos="fade-down" data-aos-delay="500" src="img/sword2.png">
+            </div>
+            <a class="button" href="#">VIEW CASESTUDY</a>   
+          </div>
+        </div>
     </div>
 
 
@@ -228,9 +202,15 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 <script src="js/jquery-2.1.4.js"></script>
-<script src="js/scrollNav.js"></script>
+<script src="js/scrollNav.js"></script> <!-- Vertical Nav Library -->
 <script src="js/imagesloaded.pkgd.min.js"></script>
 <script src="js/anime.min.js"></script>
-<script src="js/scrollMonitor.js"></script>
-<script src="js/svgBackground.js"></script>
+<script src="js/aos.js"></script> <!-- Animate on scroll Library -->
+<script>
+    $(document).ready(function(){
+    });
+    AOS.init({
+      duration: 2000,
+    })
+  </script>
 </html>
