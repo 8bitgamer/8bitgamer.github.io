@@ -214,6 +214,9 @@
 <script src="js/aos.js"></script> <!-- Animate on scroll Library -->
 <script>
     $(document).ready(function(){
+      $('#menuToggle').click(function(){
+        $('div').not(this).toggleClass('blur');
+      });
     });
     AOS.init({
       duration: 2000,
