@@ -29,7 +29,7 @@ body{
 }
 
 .casestudy{
-    padding: 15% 0 15% 0;
+    padding: 10% 0 15% 0;
 }
 
 .hero-content{
@@ -53,24 +53,23 @@ footer{
   color:#eee;
 }
 
-.angledTop.-ltr::before, .angledBottom .ltr::after {
-  transform: skewY(-5deg);
-  transform-origin: 0;
-}
-
-.angledTop::before, .angledBottom::after {
-  height: 50%;
-}
-
-.angledTop{
-  background:red;
-}
-
 .whitebox{
   background:#fff;
   color:#666;
   padding:25px;
+  box-shadow: 0 16px 30px -5px rgba(0, 0, 0, 0.2);
 }
+
+.dark-greybox{
+  background:#999;
+  color:#fff;
+}
+
+.light-greybox{
+  background:#e3e9f2;
+  color:#666;
+}
+
 .colored-background{
     color: #fff;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -78,6 +77,20 @@ footer{
     -webkit-animation: Gradient 15s ease infinite;
     -moz-animation: Gradient 15s ease infinite;
     animation: Gradient 15s ease infinite;
+}
+
+.tilted::before, .tilted::after{  
+    content:'';
+    display:block;
+    transform: skewY(-3deg);
+    transform-origin: 0;
+    background:inherit;
+    height:100px;
+    width:100%;
+}
+
+.tilted::after{
+  position:absolute;  
 }
 
 .colored-button{
@@ -978,3 +991,18 @@ a:hover
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+
+
+  /* Components */
+  .triptic{    
+    padding: 150px 0 150px 0;
+  }
+  .triptic .value-heading{
+    font-size:16px;
+  }
+
+  .title-section{
+    padding: 150px 0 150px 0;
+  }
+
+  
