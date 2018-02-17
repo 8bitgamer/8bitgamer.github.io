@@ -30,6 +30,7 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
+  text-align:Center;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -156,15 +157,18 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 }
 
 p {
-  margin-top: 0; }
+  margin-top: 0; 
+  font-family: serif;
+  font-size: 20px;
+}
 
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #23A6D5; }
 a:hover {
-  color: #0FA0CE; }
+  color: #23D5AB; }
 
 
 /* Buttons
@@ -210,8 +214,8 @@ input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
+  background-color: #23A6D5;
+  border-color: #23A6D5; }
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,

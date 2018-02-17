@@ -2,8 +2,11 @@
     box-sizing: border-box;
   }
 body{
+  overflow-x:hidden;
   color:#666;
 }  
+
+
   .item {
     width: 200px;
     height: 200px;
@@ -67,9 +70,26 @@ footer{
 
 .light-greybox{
   background:#e3e9f2;
-  color:#666;
 }
 
+.orangebox{
+  background:#EE7752;
+  color:#fff;
+}
+
+.pinkbox{
+  background:#E73C7E;
+  color:#fff;
+}
+
+.bluebox{
+  background:#23A6D5;
+  color:#fff;
+}
+
+.greenbox{
+  background:#23D5AB;
+}
 .colored-background{
     color: #fff;
     background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
@@ -995,7 +1015,7 @@ a:hover
 
   /* Components */
   .triptic{    
-    padding: 150px 0 150px 0;
+    padding: 150px 0 50px 0;
   }
   .triptic .value-heading{
     font-size:16px;
