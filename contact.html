@@ -38,7 +38,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
 </head>
-<body>
+<body class="pinkbox">
 
   <!-- Navigation Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -68,8 +68,12 @@
         </ul>
         </div>
     </nav>
-          <div class="container" style="text-align:left;">
-                <div class="">
+    <section class="content">
+        <div class="section contact-section">
+                <h1 class="title">Send me a message</h1>
+                <h2 class="tagline">I would love to hear from you!</h2>
+                <p class="hero-copy">You can send me a message using the contact form below, or reach out to me on <a href="mailto:&#106;&#097;&#115;&#111;&#110;&#064;&#106;&#097;&#115;&#111;&#110;&#119;&#101;&#108;&#116;&#101;&#114;&#046;&#099;&#111;&#109;">My Personal Email</a></p>
+                <div class="container contact-container whitebox">
                     <form id="contact-form" method="post" action="contact.php" role="form">
                         <div class="messages"></div>
                         <div class="controls">
@@ -77,14 +81,14 @@
                                 <div class="name columns four">
                                     <div class="form-group">
                                             <label for="form_name">Firstname *</label>
-                                            <input id="form_name" type="text" name="name" class="form-control columns four" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <input id="form_name" type="text" name="name" class="form-control columns twelve" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                             <div class="help-block with-errors"></div>
                                     </div>
                                 </div>   
                                 <div class="email columns six">                                       
                                         <div class="form-group">
                                                 <label for="form_email">Email *</label>
-                                                <input id="form_email" type="email" name="email" class="form-control columns six" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                                <input id="form_email" type="email" name="email" class="form-control columns twelve" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
                                                 <div class="help-block with-errors"></div>
                                             </div>
                                 </div>
@@ -110,21 +114,29 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="https://bootstrapious.com/p/bootstrap-recaptcha" target="_blank">Bootstrapious</a>.</p>
+                                    <p class="text-muted"><strong>*</strong> These fields are required.</p>
                                 </div>
                             </div>
                         </div>
-
                     </form>
-
-                </div><!-- /.8 -->
-
             </div> <!-- /.row-->
 
+            <p class="hero-copy">Or you can find me on LinkedIn, Instagram, Twitter, Facebook, and Sometimes Streaming on Twitch.</p>
+            <div class="row container">
+                    <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/jason-welter-10471010/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/nonstopcreative/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/_8bitgamer" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.twitch.tv/8bitgamerz" target="_blank"><i class="fa fa-twitch"></i></a></li>
+                    </ul>
+            </div>
+
         </div> <!-- /.container-->
+        
+    </section>
 <!-- Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <footer>
+  <footer style="bottom:0px;">
     <section>
         <div class="container">
             © 2018 JasonWelter.com
