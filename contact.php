@@ -3,9 +3,9 @@
 require('recaptcha-master/src/autoload.php');
 
 // configure
-$from = 'Demo contact form <demo@domain.com>';
+$from = 'Portfolio Site <jason@jasonwelter.com>';
 $sendTo = 'jason@jasonwelter.com';
-$subject = 'New message from contact form';
+$subject = 'New message from your portfolio site';
 $fields = array('name' => 'Name', 'email' => 'Email', 'message' => 'Message'); // array variable name => Text to appear in the email
 $okMessage = 'Contact form successfully submitted. Thank you, I will get back to you soon!';
 $errorMessage = 'There was an error while submitting the form. Please try again later';
