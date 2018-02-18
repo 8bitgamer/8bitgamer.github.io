@@ -240,6 +240,8 @@ footer{
 .help-block li{
   list-style: none;
   color: red;
+  position: absolute;
+  margin-top: 20px;
 }
 
 .sword{
