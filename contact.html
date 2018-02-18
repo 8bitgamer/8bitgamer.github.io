@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jason Welter | User Experience Designer</title>
+  <meta name="description" content="">
+  <meta name="author" content="Jason Welter">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css"> <!-- Boilerplate -->
+  <link rel="stylesheet" href="css/custom.css"> <!-- Custom CSS -->
+
+
+<!--  <script src='https://www.google.com/recaptcha/api.js'></script> -->
+
+
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+
+  <!-- Fonts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+        <div class="container">
+                <a href="index.html"><img  class="logo u-pull-left" src="img/logo.png"/></a>
+        <ul class="navbar-list u-pull-right">
+            <li class="navbar-item"><a class="navbar-link" href="resume.docx">Resume</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact Me</a></li>
+        </ul>
+        </div>
+    </nav>
+
+  <!-- Mobile Navigation Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  
+    <nav role="navigation" class="mobile--nav">
+        <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+            <li class="navbar-item"><a class="navbar-link" href="resume.pdf">Resume</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact Me</a></li>
+        </ul>
+        </div>
+    </nav>
+          <div class="container" style="text-align:left;">
+                <div class="">
+                    <form id="contact-form" method="post" action="contact.php" role="form">
+                        <div class="messages"></div>
+                        <div class="controls">
+                            <div class="row">
+                                <div class="name columns four">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control columns twelve" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>   
+                                <div class="email columns six">   
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control columns twelve" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="message columns ten">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control columns twelve" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+
+                                <div class="columns twelve">
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="6Lc0BEcUAAAAAM7K00iWnxcKUGyu3w7f4AQluaKp"></div>
+                                    </div>
+                                </div>
+
+                                <div class="columns twelve">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="https://bootstrapious.com/p/bootstrap-recaptcha" target="_blank">Bootstrapious</a>.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div><!-- /.8 -->
+
+            </div> <!-- /.row-->
+
+        </div> <!-- /.container-->
+<!-- Footer
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <footer>
+    <section>
+        <div class="container">
+            © 2018 JasonWelter.com
+            All rights reserved. 
+        </div>
+    </section>
+  </footer>
+</body>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $('#menuToggle').click(function(){
+        $('div').not(this).toggleClass('blur');
+      });
+    });
+    AOS.init({
+      duration: 2000,
+    })
+  </script>
+</html>
