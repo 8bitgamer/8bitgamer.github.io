@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NBHSSJ4');</script>
+        <!-- End Google Tag Manager -->
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -38,8 +44,12 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
 </head>
-<body class="pinkbox">
-
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NBHSSJ4"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<main class="pinkbox"> 
   <!-- Navigation Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <div class="navbar-spacer"></div>
@@ -55,24 +65,24 @@
 
   <!-- Mobile Navigation Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  
-    <nav role="navigation" class="mobile--nav">
+     <nav role="navigation" class="mobile--nav">
         <div id="menuToggle">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul id="menu">
-            <li class="navbar-item"><a class="navbar-link" href="resume.pdf">Resume</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact Me</a></li>
-        </ul>
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <li class="navbar-item"> <a href="/"><img  class="logo" src="img/logo.png"/></a></li>
+                <li class="navbar-item"><a class="navbar-link" href="resume.pdf">Resume</a></li>
+                <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact Me</a></li>
+            </ul>        
         </div>
     </nav>
     <section class="content">
         <div class="section contact-section">
                 <h1 class="title">Send me a message</h1>
                 <h2 class="tagline">I would love to hear from you!</h2>
-                <p class="hero-copy">You can send me a message using the contact form below, or reach out to me on <a href="mailto:&#106;&#097;&#115;&#111;&#110;&#064;&#106;&#097;&#115;&#111;&#110;&#119;&#101;&#108;&#116;&#101;&#114;&#046;&#099;&#111;&#109; target="_blank">My Personal Email</a></p>
+                <p class="hero-copy">You can send me a message using the contact form below, or reach out to me on <a href="mailto:&#106;&#097;&#115;&#111;&#110;&#064;&#106;&#097;&#115;&#111;&#110;&#119;&#101;&#108;&#116;&#101;&#114;&#046;&#099;&#111;&#109;" target="_blank">My Personal Email</a></p>
                 <div class="container contact-container whitebox">
                     <form id="contact-form" method="post" action="contact.php" role="form">
                         <div class="messages"></div>
@@ -81,7 +91,7 @@
                                 <div class="name columns four">
                                     <div class="form-group">
                                             <label for="form_name">Firstname *</label>
-                                            <input id="form_name" type="text" name="name" class="form-control columns twelve" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                            <input autofocus id="form_name" type="text" name="name" class="form-control columns twelve" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
                                             <div class="help-block with-errors"></div>
                                     </div>
                                 </div>   
@@ -136,7 +146,7 @@
     </section>
 <!-- Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <footer style="bottom:0px;">
+  <footer>
     <section>
         <div class="container">
             © 2018 JasonWelter.com
@@ -144,6 +154,8 @@
         </div>
     </section>
   </footer>
+</main>
+
 </body>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/validator.js"></script>
