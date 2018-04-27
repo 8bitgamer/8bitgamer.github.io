@@ -29,6 +29,8 @@
 
   <link rel="stylesheet" href="../css/aos.css" /> <!-- Animate on Scroll CSS -->
 
+  <link href="../css/lightbox.css" rel="stylesheet">
+
   <link rel="stylesheet" href="../css/twentytwenty.css" />
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -160,7 +162,7 @@
                 <h2 class="tagline">Gathering the Stakeholders</h2>
               </div>
               <div>
-                <img class="u-full-width"   data-aos="fade-in" src="../img/unikrn-team-meeting.jpg"/>
+                <a href="../img/unikrn-meeting.jpg" data-lightbox="meeting"><img class="u-full-width"   data-aos="fade-in" src="../img/unikrn-team-meeting.jpg"/></a>
               </div> 
               <p class="hero-copy">I am a big fan of <b>Lean UX</b> and I find it works great in smaller teams and startups to get all the gears moving. For this project I gathered all the stakeholders and went over the goals for the project and we discussed possible features, the value of each one, and the difficulty to impliment. This allowed me a good idea of where the best efforts could be made based on our timelines.</p>        
             </div>
@@ -179,7 +181,7 @@
                 <p class="hero-copy">Using a combination of Facebook data, Google Analytics, and industry information, I was able to create an Persona of our target demographic</p>
               </div>
               <div>
-                <img class="u-full-width"   data-aos="fade-in" src="../img/unikrn-persona.jpg"/>
+                <a href="../img/unikrn-persona.jpg" data-lightbox="persona"><img class="u-full-width"   data-aos="fade-in" src="../img/unikrn-persona.jpg"/></a>
               </div>  
               <p>
                   The gaming industry (especially esports,) tends to be a male dominated industry. In our case only 4% of our audience was female so the majority of our efforts would be spent creating a look and feel that would appeal to the male audience. Looking at facebook and Google Analytics I was able to see that the majority of our audience was in the 24-28 age range, which is exactly where we would want it to be for a betting platform. 
@@ -201,7 +203,7 @@
                 </div>
                 
                 <div>
-                  <img class="u-full-width" src="../img/unikrn-competition.jpg"/>
+                  <a href="../img/unikrn-competition.jpg" data-lightbox="userflows"><img class="u-full-width" src="../img/unikrn-competition.jpg"/></a>
                 </div>
                 <div class="case-copy">
                   <div class="row columns twelve" data-aos="fade-right" data-aos-delay="500">
@@ -227,11 +229,11 @@
                   </div>
                   
                   <div>
-                    <img class="u-full-width" src="../img/unikrn-wires.jpg"/>
+                    <a href="../img/unikrn-wires.jpg" data-lightbox="wires"><img class="u-full-width" src="../img/unikrn-wires.jpg"/></a>
                   </div>  
                   <p class="hero-copy">One of the launch features was the idea of customized quadrants. A user could come to Unikrn.com and customize how the homepage is laid out. The main reason for this is we noticed that our users were betting on specific Games, for example, User Steve would only bet on League of Legends games but not CS:GO games. This led me to believe that the majority of users would only bet on the games they liked to play. So when a user would set the upper left quandrant on unikrn to show League of Legends games, it would only show League of Legends games until changed. This way a user can customize how their homepage is laid out. </p>                 
                   <div>
-                    <img class="u-full-width" src="../img/unikrn-quadrants.jpg"/>
+                    <a href="../img/unikrn-quadrants.jpg" data-lightbox="quadrants"><img class="u-full-width" src="../img/unikrn-quadrants.jpg"/></a>
                   </div>  
                 </div>
     
@@ -280,7 +282,7 @@
                       </div>
                       
                       <div>
-                        <img class="u-full-width" src="../img/unikrn-userflows.jpg"/>
+                        <a href="../img/unikrn-userflows.jpg" data-lightbox="userflows"><img class="u-full-width" src="../img/unikrn-userflows.jpg"/></a> 
                       </div>  
                     </div>
         
@@ -360,8 +362,9 @@
     </section>
   </footer>
   </main>
+  <script src="../js/jquery-3.2.1.js"></script>
+  <script src="../js/lightbox.js"></script>
 </body>
-<script src="../js/jquery-3.2.1.js"></script>
 <script src="../js/scrollNav.js"></script> <!-- Vertical Nav Library -->
 <script src="../js/imagesloaded.pkgd.min.js"></script>
 <script src="../js/anime.min.js"></script>
