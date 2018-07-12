@@ -898,7 +898,7 @@ a:hover
       top: 8px;
       height: 16px;
       width: 16px;
-      background: url(../img/cd-nav-icons.svg) no-repeat;
+      background: url(https://res.cloudinary.com/jaydan/image/upload/v1531380776/jasonwelter/cd-nav-icons.svg) no-repeat;
       -webkit-transform: translateX(-50%) scale(0);
       -moz-transform: translateX(-50%) scale(0);
       -ms-transform: translateX(-50%) scale(0);
@@ -1030,7 +1030,7 @@ a:hover
     transform: translateX(-50%);
     width: 44px;
     height: 44px;
-    background: url(../img/cd-arrow-bottom.svg) no-repeat center center;
+    background: url(https://res.cloudinary.com/jaydan/image/upload/v1531380777/jasonwelter/cd-arrow-bottom.svg) no-repeat center center;
     opacity: .5;  
     -webkit-animation: flickerAnimation 3s infinite;
     -moz-animation: flickerAnimation 3s infinite;
