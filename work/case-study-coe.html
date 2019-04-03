@@ -124,33 +124,7 @@
         </div>
       </div>       
     </div>
-    <div class="section container triptic">
-        <h1 class="title" data-aos="fade-in">Endusers</h1>
-        <h2 class="tagline">Who will be using the COE Design System (CDS)</h2>
-        <div class="row">
-          <div class="one-third column value whitebox dropshadow tl" data-aos="fade-right">
-            <h2 class="value-multiplier">Design</h2>
-            <h5 class="value-heading">Creating guidelines & designing components</h5>
-            <p class="value-description">Of our new daily users, 80% would drop off from the signup form.</p>
-          </div>
-          <div class="one-third column value whitebox dropshadow" data-aos="fade-in">
-            <h2 class="value-multiplier">Engineering</h2>
-            <h5 class="value-heading">Implimentation & documentation</h5>
-            <p class="value-description">2% of our average users would return the next day, 4% would return after 1 week.</p>
-          </div>
-          <div class="one-third column value whitebox dropshadow tr" data-aos="fade-left">
-            <h2 class="value-multiplier">Content</h2>
-            <h5 class="value-heading">Creating marketing materials</h5>
-            <p class="value-description">After launching the MVP we had around 20-30 active users per day.</p>
-          </div>
-        </div>       
-      </div>
     </div> 
-    <div class="container">
-      <p class="hero-copy">Since I was targeting signups and user retention as the goal of this launch I decided to use these three metrics to validate my design choices. For new user acquisition I chose <b>Signup Dropoff</b> as to make sure users are getting past the first layer of the acquisition funnel.</p>
-      <p class="hero-copy">For <b>User Retention</b> I wanted to focus on our return users. This way I know that users are enjoying the site and coming back to either place more bets or watch more of games.</p>   
-      <p class="hero-copy">To make sure I am not looking purely at one dimension for results I decided to use our number of <b>Daily Users</b> to validate both increasing our user base and returning users since this is a solid representation of both.</p>   
-    </div>
   </section>
 
   <section>
@@ -158,13 +132,14 @@
           <div class="container">
             <div class="row casestudy">
               <div class="u-full-width column hero-content" data-aos="fade-in">
-                <h1 class="title">Kickoff</h1>
-                <h2 class="tagline">Gathering the Stakeholders</h2>
+                <h1 class="title">Step 1</h1>
+                <h2 class="tagline">Finding the right framework</h2>
               </div>
               <div>
-                <a href="../img/unikrn-meeting.jpg" data-lightbox="meeting"><img class="u-full-width"   data-aos="fade-in" src="../img/unikrn-team-meeting.jpg"/></a>
+                <a href="../img/storybook.png" data-lightbox="storybook"><img class="u-full-width"   data-aos="fade-in" src="../img/storybook.png"/></a>
               </div> 
-              <p class="hero-copy">I am a big fan of <b>Lean UX</b> and I find it works great in smaller teams and startups to get all the gears moving. For this project I gathered all the stakeholders and went over the goals for the project and we discussed possible features, the value of each one, and the difficulty to impliment. This allowed me a good idea of where the best efforts could be made based on our timelines.</p>        
+              <p class="hero-copy">I was looking around at several different design guide frameworks trying to find something that would fit our needs. The hard part was because our website is a little bit of a Frankenstein I had to make sure it supported multiple languages, REACT, VueJS, asp.net, and plane old HTML.</p>
+              <p class="hero-copy">This led me to a library called <b>Storybook!</b> Storybook is an amazing library that let me use live code to create the component library and supported any language I could throw at it. This combined with it's ability to have custom features that I could design and impliment easily made it a stand out choice from all other options.</p>        
             </div>
 
           </div>
@@ -176,16 +151,14 @@
           <div class="container">
             <div class="row casestudy">
               <div class="u-full-width column hero-content" data-aos="fade-in">
-                <h1 class="title">The Target Demographic</h1>
-                <h2 class="tagline">Defining the Persona</h2>
-                <p class="hero-copy">Using a combination of Facebook data, Google Analytics, and industry information, I was able to create an Persona of our target demographic</p>
+                <h1 class="title">Step 2</h1>
+                <h2 class="tagline">???</h2>
+                <p class="hero-copy">The next thing I needed to do was to figure out where to get started. I began by creating a list of all components we currently have on our website, starting with our v2 site which was built with REACT. </p>
+                <p class="hero-copy">Once I began moving over the components into the style guide, I began to come across several problems that would slow down the development. Many of our components were not built to be flexible enough to exist outside of our website, so I took on the task of updating our components to be more adaptable. This was mainly done by scoping the SCSS to only be used inside the components themselves.</p>
               </div>
               <div>
-                <a href="../img/unikrn-persona.jpg" data-lightbox="persona"><img class="u-full-width"   data-aos="fade-in" src="../img/unikrn-persona.jpg"/></a>
-              </div>  
-              <p>
-                  The gaming industry (especially esports,) tends to be a male dominated industry. In our case only 4% of our audience was female so the majority of our efforts would be spent creating a look and feel that would appeal to the male audience. Looking at facebook and Google Analytics I was able to see that the majority of our audience was in the 24-28 age range, which is exactly where we would want it to be for a betting platform. 
-              </p>
+                <a href="../img/componentsList.JPG" data-lightbox="componentsList"><img class="u-full-width"   data-aos="fade-in" src="../img/componentsList.JPG"/></a>
+              </div> 
             </div>
 
           </div>
@@ -197,21 +170,15 @@
             <div class="container">
               <div class="row casestudy">
                 <div class="u-full-width column hero-content">
-                  <h1 class="title">Competative Analysis</h1>
-                  <h2 class="tagline">Analyzing the landscape to better know the competition.</h2>
-                  <p class="hero-copy">Looking at the current competative landscape to get a better feel for what will and won't work. Gambling in eSports was still quite new and so I relied more on parallels such as <b>DraftKings</b>, <b>Vulcun.com</b>, <b>alphaBet</b> , and others for reference.</p>
+                  <h1 class="title">Step 3</h1>
+                  <h2 class="tagline">Profit...err gathering user feedback</h2>
+                  <p class="hero-copy">After doing my first pass on the style guide it allowed me to get some hands on testing with our development team using the tool.</p>
+                  <p class="hero-copy">I created a list of feedback from my team including, likes, dislikes, and suggested improvements. With this feedback I was able to create some quality of life features to address issues such as speed to impliment, and some preview modes that allowed them to see the components at different resolutions.</p>
                 </div>
                 
                 <div>
-                  <a href="../img/unikrn-competition.jpg" data-lightbox="userflows"><img class="u-full-width" src="../img/unikrn-competition.jpg"/></a>
+                  <a href="../img/design-system.gif" data-lightbox="design-system"><img class="u-full-width" src="../img/design-system.gif"/></a>
                 </div>
-                <div class="case-copy">
-                  <div class="row columns twelve" data-aos="fade-right" data-aos-delay="500">
-                      <p>
-                        Many of the established betting sites such as Sportsbook.ag had very targeted signup funnels. One of the things that we didn't impliment in our initial MVP launch of Unikrn.com was a signup with Facebook option. This would allow us to get new users with the least amount of friction. This option wasn't all sunshine and rainbows, it does come with some constraints, such as you only get the email associated with the facebook account, in many cases these were throw away emails so adding a secondary email validation step after account creation was sometimes neccessary.
-                      </p>
-                  </div>
-              </div>  
               </div>
   
             </div>
@@ -223,121 +190,19 @@
               <div class="container">
                 <div class="row casestudy">
                   <div class="u-full-width column hero-content">
-                    <h1 class="title">Sketching & Wireframing</h1>
-                    <h2 class="tagline">Creating the skeleton</h2>
-                    <p class="hero-copy">Once I have a good idea of our goals, target demographic, and a the competitive landscape I begin to sketch ideas and experiment with different options and features that best meet those goals. During this time I try to really focus on our target user and put myself in their shoes, what would they want, what would they expect the interface to do. I firmly believe the best way to improve your customers experience is through Empathy. You need to understand them before you can help them.</p>
+                    <h1 class="title">Results</h1>
+                    <h2 class="tagline">Where are we now</h2>
+                    <p class="hero-copy">After creating the initial Style Guide we found that feature releases for marketing pages had increased dramatically. Single static pages that would take 2-3 days were now being released in under a day. We also had more consistancy with all our brand since everything was being driven from a single source of truth. I was also able to include documentation using Markdown on each component that also informed the developers how each component was meant to be used, for example: "No more than one CTA button can be used on a page, and cannot be used next to a Primary Button." and other guidelines to help answer any questions that might be brought up during development.</p>
                   </div>
                   
                   <div>
-                    <a href="../img/unikrn-wires.jpg" data-lightbox="wires"><img class="u-full-width" src="../img/unikrn-wires.jpg"/></a>
-                  </div>  
-                  <p class="hero-copy">One of the launch features was the idea of customized quadrants. A user could come to Unikrn.com and customize how the homepage is laid out. The main reason for this is we noticed that our users were betting on specific Games, for example, User Steve would only bet on League of Legends games but not CS:GO games. This led me to believe that the majority of users would only bet on the games they liked to play. So when a user would set the upper left quandrant on unikrn to show League of Legends games, it would only show League of Legends games until changed. This way a user can customize how their homepage is laid out. </p>                 
-                  <div>
-                    <a href="../img/unikrn-quadrants.jpg" data-lightbox="quadrants"><img class="u-full-width" src="../img/unikrn-quadrants.jpg"/></a>
-                  </div>  
+                    <a href="../img/grid-system.gif" data-lightbox="grid-system"><img class="u-full-width" src="../img/grid-system.gif"/></a>
+                  </div>   
                 </div>
     
               </div>
           </div>
         </section>
-        <section>
-            <div class="section unikrn--hero" data-aos="fade-in">
-                <div class="container">
-                  <div class="row casestudy">
-                    <div class="u-full-width column hero-content">
-                      <h1 class="title">Hi-Fi Prototypes</h1>
-                      <h2 class="tagline">Rapid prototyping to prove concepts</h2>
-                      <p class="hero-copy">I try to get to testing my ideas as soon as possible, the faster we fail the faster we improve.</p>
-                    </div>
-                    
-                    <div>
-                      <img class="u-full-width" src="../img/unikrn-signup.gif"/>
-                    </div>
-                    <div class="case-copy">
-                      <div class="row columns eight" data-aos="fade-right" data-aos-delay="500">
-                          <p>
-                              I began testing the signin dialog using HTML/CSS, Javascript, and Screen shots of the design comps. Once I have things in place I can test out flows and make sure it meets our users needs. 
-                          </p>
-                      </div>
-                      </div>
-                  </div>  
-                  </div>
-      
-                </div>
-            </div>
-          </section>
-
-          <section class="greenbox tilted">
-              <div class="section unikrn--hero" data-aos="fade-in">
-                  <div class="container">
-                    <div class="row casestudy">
-                      <div class="u-full-width column hero-content">
-                        <h1 class="title">Implimentation | Testing | Iteration</h1>
-                        <h2 class="tagline">Test and Test some more</h2>
-                        <p class="hero-copy">Once the designs have been implimented the real fun begins. In startups funds can be limited so I had to get really creative. Using the metrics defined earlier along with creating personas from Google Analytics I was able to look at how users are using the site and from that find their pain points.</p>                       
-                        <div>
-                            <img class="u-full-width" src="../img/unikrn-signup.gif"/>
-                          </div>
-                        <p> In a startup you have to be very creative with resources. You may not have access to large testing environments, eye tracking software, or the ability to do large user studies to gather information. For this project I used a combination of Optimizely for AB testing, Google Analytics to validate my findings, Peek usability testing to get live analysis of users on the site, and my personal favorite, <a href="http://www.hotjar.com" target="_blank">Hotjar</a> to view a users journy through the website.</p>
-                      </div>
-                      
-                      <div>
-                        <a href="../img/unikrn-userflows.jpg" data-lightbox="userflows"><img class="u-full-width" src="../img/unikrn-userflows.jpg"/></a> 
-                      </div>  
-                    </div>
-        
-                  </div>
-              </div>
-            </section>
-
-            <section>
-                <div class="section unikrn--hero">
-                    <div class="container">
-                        <div class="section container triptic">
-                            <h1 class="title" data-aos="fade-in">Results</h1>
-                            <h2 class="tagline">How did things change?</h2>
-                            <div class="row">
-                              <div class="one-third column value whitebox dropshadow tl" data-aos="fade-right">
-                                <h2 class="value-multiplier">25%<div class="arrow-down arrow"></div></h2>
-                                <h5 class="value-heading">Signup Dropoff</h5>
-                                <p class="value-description">We went from 80% dropoff down to 25% on the signup form.</p>
-                              </div>
-                              <div class="one-third column value whitebox dropshadow" data-aos="fade-in">
-                                <h2 class="value-multiplier">6%<div class="arrow-up arrow"></div></h2>
-                                <h5 class="value-heading">Return Users</h5>
-                                <p class="value-description">Our next day return users jumped up to 6% and our week over week return users spiked at 14% of new users would return.</p>
-                              </div>
-                              <div class="one-third column value whitebox dropshadow tr" data-aos="fade-left">
-                                <h2 class="value-multiplier">200+<div class="arrow-up arrow"></div></h2>
-                                <h5 class="value-heading">Daily Users</h5>
-                                <p class="value-description">We jumped from 20+ users a day to over 200+ over the span of a two months</p>
-                              </div>
-                            </div>    
-                          </div>
-                        </div>      
-                        <div class="section container">
-                            <div class="">
-                                <p class="hero-copy">
-                                  The changes to the signup flow assisted greatly in getting new users onto the site before they bounced. This coupled with the customized homepage features were the first steps in streamlining and establishing a fanbase with Unikrn.com
-                                </p>                               
-                            </div> 
-                        </div>   
-                        <div class="section container">
-                            <div class="">  
-                                <div id="container1">
-                                    <img src="../img/unikrn-oldSite.jpg">
-                                    <img src="../img/unikrn-newSite.jpg">
-                                </div>
-                              </div> 
-                        </div>       
-                        <div class="section container">
-                            <div class="">
-                                <p class="hero-copy"><i>A comparison of the old site VS the new site's landing pages.</i> </p>                               
-                              </div> 
-                        </div>     
-                    </div>
-                </div>
-              </section>
 
     <!-- Final CTA
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
