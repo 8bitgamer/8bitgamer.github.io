@@ -81,6 +81,10 @@ footer{
   color:#fff;
 }
 
+.colored-background {
+  background: #333;
+}
+
 .dark-greybox{
   background:#999;
   color:#fff;
@@ -1204,4 +1208,146 @@ a:hover
   color: #23D5AB;
   transform: scale(1.6);
   -webkit-text-fill-color: #23D5AB;
+}
+
+
+/*   Start of Card section   */
+.row .card .menu-content {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.row .card .menu-content::before, .row .card .menu-content::after {
+  content: '';
+  display: table;
+}
+.row .card .menu-content::after {
+  clear: both;
+}
+.row .card .menu-content li {
+  display: inline-block;
+}
+.row .card .menu-content a {
+  color: #fff;
+}
+.row .card .menu-content span {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.row .card .wrapper {
+  background-color: #fff;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.row .card .wrapper:hover .data {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.row .card .data {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  -webkit-transform: translateY(calc(70px + 1em));
+          transform: translateY(calc(70px + 1em));
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.row .card .data .content {
+  padding: 1em;
+  position: relative;
+  z-index: 1;
+}
+.row .card .tags {
+  font-size: 12px;
+}
+.row .card .title {
+  margin-top: 10px;
+}
+.row .card .text {
+  height: 70px;
+  margin: 0;
+}
+.row .card input[type='checkbox'] {
+  display: none;
+}
+.row .card input[type='checkbox']:checked + .row .menu-content {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+#unikrnVaultProjectThumb {
+  background: url(../img/unikrnVault-thumb.jpg) center/cover no-repeat;
+}
+
+#unikrnWebsiteProjectThumb {
+  background: url(../img/unikrnWebThumb.jpg) center/cover no-repeat;
+}
+
+#elyriaStyleguideProjectThumb {
+  background: url(../img/eaThumb.jpg) center/cover no-repeat;
+}
+
+#coeStyleguideProjectThumb {
+  background: #333 url(../img/laywaste.jpg) center/cover no-repeat;
+}
+
+.row .relatedCard .wrapper:hover .menu-content span {
+  -webkit-transform: translate(-50%, -10px);
+          transform: translate(-50%, -10px);
+  opacity: 1;
+}
+.row .relatedCard .data {
+  color: #fff;
+  -webkit-transform: translateY(calc(70px + 4em));
+          transform: translateY(calc(70px + 4em));
+}
+.row .relatedCard .title a {
+  color: #fff;
+}
+.row .relatedCard .button {
+  display: block;
+  width: 100px;
+  margin: 2em auto 1em;
+  text-align: center;
+  font-size: 12px;
+  color: #23A6D5;
+  position: relative;
+  font-weight: 700;
+}
+.row .relatedCard .button::after {
+  content: '\2192';
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  transition: all 0.3s;
+}
+.row .relatedCard .button:hover::after {
+  -webkit-transform: translate(5px, -50%);
+          transform: translate(5px, -50%);
+  opacity: 1;
+}
+
+.relatedProjectBtn {
+  padding: 0;
+  border: none;
+}
+
+@media (max-width: 1000px) {
+  .relatedCard {
+    margin-bottom: 20px;
+    width: 100% !important;
+    margin-left: 0px !important; 
+  }
 }
