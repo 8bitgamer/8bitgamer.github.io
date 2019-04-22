@@ -1351,3 +1351,203 @@ a:hover
     margin-left: 0px !important; 
   }
 }
+
+ul{
+  list-style: none;
+}
+
+
+/* Dropdowns */
+nav .container ul li {
+	display:inline-block;
+	}
+
+nav .container a {
+	display:block;
+}
+
+/* Hide Dropdowns by Default */
+nav .container ul ul {
+  display: none;
+  position: absolute;
+  top: 60px;
+  text-align: left;
+  margin: 0 !important;
+  background: #fff;
+  padding: 10px;
+  z-index: 3;
+  box-shadow: 0 16px 30px -5px rgba(0, 0, 0, 0.2);
+  border: 1px solid #eee;
+}
+	
+/* Display Dropdowns on Hover */
+nav .container ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+nav .container ul ul li {
+  padding: 5px;
+	width:170px;
+	float:none;
+	display:list-item;
+  position: relative;
+  transition: background .5s;
+}
+
+.subnav:hover {
+  background: #23A6D5 !important;
+}
+
+.subnav:hover a{
+  color:#fff;
+}
+
+.navbar-item:hover{
+  color:#fff;
+}
+
+/* Second, Third and more Tiers	*/
+nav .container ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+li > a:after { content:  ' +'; }
+li > a:only-child:after { content: ''; }
+
+.selected{
+}
+
+.selected a{
+  color: #23A6D5;
+}
+
+.navSelect {
+  border-bottom: solid 1px #23A6D5;
+}
+
+/* End of Dropdown */
+
+/* Tags */
+.tag {
+  font-size: 10px;
+  padding: 2px;
+  color: #fff;
+}
+/* End of Tags */
+
+.services h5{
+  margin-bottom: 0px;
+}
+
+.html {
+  background: #f16529;
+}
+
+.css {
+  background: #2965f1;
+}
+
+.javascript {
+  background: #323330;
+}
+
+.photoshop {
+  background: #3c327b;
+}
+
+.illustrator {
+  background: #e76f19;
+}
+
+.ux {
+  background: #23D5AB;
+}
+
+.mobile {
+  background: #ff00f0;
+}
+
+.wordpress {
+  background: #21759b;
+}
+
+.php {
+  background: #99cc99;
+}
+
+.invision {
+  background: #ff3366;
+}
+
+.live {
+  border: solid 1px red;
+  transition: all .5s;
+}
+
+.live:hover {
+  background: red;
+}
+
+.live a {  
+  color: red;
+}
+
+.live a:hover {
+  color: #fff;
+}
+
+.services p {
+  font-size:14px;
+}
+
+.portfolio-item {
+  min-height: 375px;
+}
+
+ .mySlides {display:none;}
+
+
+ .w3-display-left {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  transform: translate(0%,-50%);
+  -ms-transform: translate(-0%,-50%);
+}
+
+.w3-btn, .w3-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.w3-black, .w3-hover-black:hover {
+  color: #fff!important;
+  background-color: #000!important;
+}
+
+.w3-display-right {
+  position: absolute;
+  top: 25%;
+  right: 0%;
+  transform: translate(0%,-50%);
+  -ms-transform: translate(0%,-50%);
+}
+
+.w3-button:hover {
+  color: #000!important;
+  background-color: #ccc!important;
+}
