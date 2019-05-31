@@ -50,23 +50,42 @@
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="navbar-spacer"></div>
+  <div class="navbar-spacer"></div>
   <nav class="navbar">
     <div class="container">
-        <a href="../"><img  class="logo u-pull-left" src="../img/logo.png"/></a>
+        <a href="../"><img class="logo u-pull-left" src="../img/logo.png"></a>
       <ul class="navbar-list u-pull-right">
-        <li class="navbar-item"><a class="navbar-link" href="../resume.docx">Resume</a></li>
+        <li class="navbar-item">
+            <a class="navbar-link navSelect" href="#">My Work</a>    
+            <ul>
+                    <li class="selected subnav"><a href="#">Case Studies</a></li>
+                    <li class="subnav"><a href="web-design.html">Web Design</a></li>
+                    <li class="subnav"><a href="mobile-design.html">Mobile Design</a></li>
+                    <li class="subnav"><a href="visual-design.html">Visual Design</a></li>
+            </ul> 
+        </li>    
+        <li class="navbar-item"><a class="navbar-link" href="../resume.pdf">Resume</a></li>
         <li class="navbar-item"><a class="navbar-link" href="../contact.html">Contact Me</a></li>
       </ul>
     </div>
   </nav>
-  <nav role="navigation" class="mobile--nav">
+  <nav class="mobile--nav" role="navigation">
       <div id="menuToggle">
-          <input type="checkbox" />
+          <input type="checkbox">
           <span></span>
           <span></span>
           <span></span>
           <ul id="menu">
-              <li class="navbar-item"> <a href="/"><img  class="logo" src="../img/logo.png"/></a></li>
+              <li class="navbar-item"> <a href="/"><img class="logo" src="../img/logo.png"></a></li>
+              <li class="navbar-item">
+                  <ul>
+                          <li class="selected subnav"><a href="#">Case Studies</a></li>
+                          <li class="subnav"><a href="web-design.html">Web Design</a></li>
+                          <li class="subnav"><a href="mobile-design.html">Mobile Design</a></li>
+                          <li class="subnav"><a href="visual-design.html">Visual Design</a></li>
+                  </ul> 
+              </li>  
+              <hr/>
               <li class="navbar-item"><a class="navbar-link" href="resume.pdf">Resume</a></li>
               <li class="navbar-item"><a class="navbar-link" href="contact.html">Contact Me</a></li>
           </ul>        
